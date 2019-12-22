@@ -16,6 +16,7 @@ def print_first_directors_movie_titles
   column_index=0  
   while column_index<nds[row_index][:movies].length
   puts "#{nds[row_index][:movies][column_index][:title]}" 
-   
+   column_index+=1 
+ end
 end
  pretty_print_nds(directors_database)
